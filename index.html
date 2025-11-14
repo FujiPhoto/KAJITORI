@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>【議員名】公式サイト｜ずっと住み続けたくなる【自治体名】へ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="【議員名】（【自治体名】議会議員）の公式サイトです。子育て・福祉・産業・暮らしの現場から、ずっと住み続けたくなるまちづくりを目指します。">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #f5f7fb;
+    }
+    a { color: #1c7ed6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      background: linear-gradient(135deg, #2f9e44, #1c7ed6);
+      color: #fff;
+      padding: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .site-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 8px 0 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 14px;
+    }
+    nav li { }
+    main { padding: 0 0 40px; }
+    .hero {
+      background: #e7f5ff;
+      border-bottom: 4px solid #2f9e44;
+    }
+    .hero-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      padding: 32px 16px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .hero-text {
+      flex: 1 1 260px;
+    }
+    .hero-title {
+      font-size: 28px;
+      margin: 0 0 8px;
+      color: #1c7ed6;
+      font-weight: 800;
+    }
+    .hero-sub {
+      font-size: 18px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      color: #2f9e44;
+    }
+    .hero-lead {
+      font-size: 14px;
+      max-width: 520px;
+    }
+    .hero-photo {
+      flex: 0 0 220px;
+      text-align: center;
+    }
+    .hero-photo .photo {
+      width: 200px;
+      height: 260px;
+      background: #ccc;
+      border-radius: 12px;
+      margin-bottom: 8px;
+    }
+    section {
+      padding: 32px 16px;
+    }
+    section:nth-of-type(odd) { background: #fff; }
+    section:nth-of-type(even) { background: #f1f3f5; }
+    section h2 {
+      font-size: 22px;
+      margin: 0 0 16px;
+      border-left: 6px solid #2f9e44;
+      padding-left: 10px;
+    }
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 24px;
+    }
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      padding: 16px;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #1c7ed6;
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-left: 3px solid #2f9e44;
+    }
+    .timeline li {
+      margin: 0 0 12px 12px;
+      position: relative;
+      padding-left: 12px;
+    }
+    .timeline li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #2f9e44;
+      position: absolute;
+      left: -17px;
+      top: 5px;
+    }
+    .faq-item {
+      margin-bottom: 16px;
+    }
+    .faq-q {
+      font-weight: 700;
+    }
+    .sns-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 14px;
+    }
+    .sns-list li::before {
+      content: "▶";
+      margin-right: 4px;
+      font-size: 10px;
+      color: #2f9e44;
+    }
+    footer {
+      background: #212529;
+      color: #fff;
+      padding: 24px 16px;
+      font-size: 13px;
+    }
+    footer a { color: #ffd43b; }
+    @media (max-width: 720px) {
+      .hero-title { font-size: 22px; }
+      .hero-sub { font-size: 16px; }
+      header {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <p class="site-title">【議員名】公式サイト｜【自治体名】議会議員</p>
+    <nav>
+      <ul>
+        <li><a href="#message">メッセージ</a></li>
+        <li><a href="#profile">自己紹介</a></li>
+        <li><a href="#history">これまでの歩み</a></li>
+        <li><a href="#policies">5つの重点政策</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sns">SNS・後援会</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-title">ずっと住み続けたくなる【自治体名】へ</p>
+        <p class="hero-sub">子育て・福祉・産業・暮らしを、現場から支える。</p>
+        <p class="hero-lead">
+          【議員名】（【自治体名】議会議員）の公式サイトです。<br>
+          子育て支援、高齢者福祉、地域産業の活性化、防災・インフラ整備など、住民の皆さまの声を原点にしたまちづくりに取り組んでいます。
+        </p>
+      </div>
+      <div class="hero-photo">
+        <div class="photo">
+          <!-- 議員写真をここに配置（background-imageでもimgタグでも可） -->
+        </div>
+        <p>【議員名】</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGE -->
+  <section id="message">
+    <div class="inner">
+      <h2>ごあいさつ</h2>
+      <p>
+        私は【生年】年に【自治体名】で生まれ、教員として、そして議会議員として、長年このまちと向き合ってきました。<br>
+        人口減少や物価高、子育てや介護の不安など、地域を取り巻く環境は大きく変わっています。だからこそ、「ここに住み続けたい」と思える【自治体名】を守り、次の世代につなぐことが、私のいちばんの使命です。
+      </p>
+      <p>
+        このサイトでは、私の考えやこれまでの取り組み、今後チャレンジしたいことをわかりやすくお伝えしていきます。<br>
+        どうか率直なご意見・ご要望をお寄せください。一緒に、よりよい【自治体名】をつくっていきましょう。
+      </p>
+    </div>
+  </section>
+
+  <!-- PROFILE + HISTORY SUMMARY -->
+  <section id="profile">
+    <div class="inner">
+      <h2>自己紹介</h2>
+      <div class="two-column">
+        <div>
+          <h3>プロフィール</h3>
+          <p>
+            氏名：【議員名】<br>
+            生年月日：【西暦】年【月】日<br>
+            出身地：【自治体名＋地区】<br>
+            家族構成：【例：妻・子ども2人・母】<br>
+            趣味・特技：【例：読書、スポーツ観戦、地域行事の写真撮影】<br>
+          </p>
+          <p>
+            【議員名】は、【自治体名】で生まれ育ちました。【高校名】卒業後は【職歴例】として働き、地域の子どもたちや保護者と日々向き合ってきました。<br>
+            その中で、少子高齢化や地域の将来への不安を強く感じ、【西暦】年に【自治体名】議会議員選挙に立候補。以来、子育て支援や福祉、産業振興を中心に活動しています。
+          </p>
+        </div>
+        <div id="history">
+          <h3>これまでの歩み（ダイジェスト）</h3>
+          <ul class="timeline">
+            <li><strong>【1965年】</strong>　【自治体名】に生まれる</li>
+            <li><strong>【1983年】</strong>　【高校名】卒業</li>
+            <li><strong>【19xx年】</strong>　【職歴1】</li>
+            <li><strong>【19xx年】</strong>　【地域活動・PTA役員など】</li>
+            <li><strong>【2003年】</strong>　【自治体名】議会議員に初当選</li>
+            <li><strong>【20xx年】</strong>　【委員会役職・表彰など】</li>
+            <li><strong>【20xx年】</strong>　現在【●期目】として活動中</li>
+          </ul>
+          <p><a href="/profile/">▶ 詳しいプロフィール・経歴を見る</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICIES -->
+  <section id="policies">
+    <div class="inner">
+      <h2>5つの重点政策・取り組み</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>1. 子育て・教育</h3>
+          <p>
+            妊娠・出産から高校卒業まで切れ目のない支援をめざします。保育の受け皿拡充、学校施設の整備、部活動・学習支援などを通じて、子どもたちの笑顔あふれる【自治体名】をつくります。
+          </p>
+        </div>
+        <div class="card">
+          <h3>2. 移住・定住・まちづくり</h3>
+          <p>
+            空き家対策や住宅支援、地域交通の確保など、「住み続けたい・住みたい」と思える環境づくりを進めます。若い世代や子育て世帯の定住を後押しします。
+          </p>
+        </div>
+        <div class="card">
+          <h3>3. 福祉・医療・高齢者支援</h3>
+          <p>
+            高齢者の見守り体制や地域包括支援センターとの連携を強化し、誰もが安心して暮らせる仕組みを整えます。医療機関との連携、防災面での配慮も進めます。
+          </p>
+        </div>
+        <div class="card">
+          <h3>4. 農林水産業・地場産業</h3>
+          <p>
+            地域の農業・林業・水産業の担い手支援、地元産品のブランド化・販路拡大に取り組みます。観光や教育と連携した取り組みも推進します。
+          </p>
+        </div>
+        <div class="card">
+          <h3>5. 行政改革・防災・インフラ</h3>
+          <p>
+            行政のデジタル化や情報公開の推進により、わかりやすく、効率的な行政運営をめざします。道路・河川などのインフラ整備、防災・減災対策も着実に進めます。
+          </p>
+        </div>
+      </div>
+      <p style="margin-top:16px;"><a href="/vision/">▶ 詳しい政策・これまでの実績を見る</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="inner">
+      <h2>よくあるご質問</h2>
+      <div class="faq-item">
+        <p class="faq-q">Q. 【議員名】に相談したいことがあります。どうすれば良いですか？</p>
+        <p>A. 本サイトの「お問い合わせ」フォーム、SNSのDM、または事務所へのお電話でご相談いただけます。内容に応じて、面談やオンラインでのご相談も可能です。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Q. 議会での発言内容はどこで見られますか？</p>
+        <p>A. 【自治体名】議会の公式サイトに議事録が掲載されています。また、このサイトの「活動報告」でも、できるだけわかりやすく要点をまとめてご報告します。</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Q. 後援会に入りたいのですが、どうしたら良いですか？</p>
+        <p>A. 「お問い合わせ」ページから「後援会入会希望」とご記入のうえ送信してください。事務局から折り返しご連絡いたします。</p>
+      </div>
+      <p><a href="/faq/">▶ その他のよくあるご質問はこちら</a></p>
+    </div>
+  </section>
+
+  <!-- SNS & SUPPORT -->
+  <section id="sns">
+    <div class="inner">
+      <h2>SNS・後援会のご案内</h2>
+      <p>日々の活動の様子や議会のトピックスを、SNSでも発信しています。ぜひフォローしてください。</p>
+      <ul class="sns-list">
+        <li><a href="https://example.com" target="_blank" rel="noopener">X（旧Twitter）</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Facebookページ</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://example.com" target="_blank" rel="noopener">LINE公式アカウント</a></li>
+      </ul>
+      <p style="margin-top:16px;">
+        【議員名】後援会へのご入会や、ボランティアスタッフとしてお手伝いいただける方も募集しています。<br>
+        詳細は<a href="/contact/">お問い合わせフォーム</a>よりご連絡ください。
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="inner">
+    <p><strong>【議員名】事務所</strong><br>
+      〒【郵便番号】 【住所】<br>
+      TEL：【電話番号】／FAX：【FAX】<br>
+      メール：<a href="mailto:info@example.jp">info@example.jp</a>
+    </p>
+    <p>
+      <a href="/">TOP</a>｜<a href="/profile/">議員紹介</a>｜<a href="/vision/">政策・ビジョン</a>｜
+      <a href="/activity/">活動報告</a>｜<a href="/faq/">FAQ</a>｜<a href="/contact/">お問い合わせ</a>｜
+      <a href="/privacy/">プライバシーポリシー</a>
+    </p>
+    <p>© 【西暦】 【議員名】 All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
